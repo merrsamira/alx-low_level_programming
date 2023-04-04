@@ -11,19 +11,15 @@
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
 
-	size_t	i;
-	char	*p;
-	char	*t;
+	unsigned int	i;
 
-	p = (char *)dest;
-	t = (char *)src;
 	i = 0;
 	if (!dest && ! src)
 		return (NULL);
 	while (i < n)
 	{
-		p[i] = t[i];
+		dest[i] = src[i];
 		i++;
 	}
-	return (p);
+	return (dest);
 }
