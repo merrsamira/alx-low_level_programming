@@ -20,15 +20,10 @@ unsigned int binary_to_uint(const char *b)
 			return (0);
 	}
 
-	power = 1;
-	x = 0;
-	i--;
-	while (i >= 0)
+	for (power = 1, x = 0, i--; i >= 0; i--, power *= 2)
 	{
-		power *= 2;
 		if (b[i] == '1')
 			x += power;
-		i--;
 	}
 
 	return (x);
