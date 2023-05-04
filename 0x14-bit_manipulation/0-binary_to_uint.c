@@ -21,9 +21,9 @@ unsigned int binary_to_uint(const char *b)
 	}
 
 	power = 1;
-       	x = 0;
+	x = 0;
 	i--;
-       while (i >= 0)
+	while (i >= 0)
 	{
 		power *= 2;
 		if (b[i] == '1')
