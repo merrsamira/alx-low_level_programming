@@ -1,3 +1,3 @@
 #!/bin/bash
-wget -P /tmp https://github.com/merrsamira/alx-low_level_programming/raw/master/0x18-dynamic_libraries/nrandom.so
-export LD_PRELOAD=/tmp/nrandom.so
+cp gm gm_temp
+chmod +x gm_temp
